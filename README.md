@@ -1,67 +1,31 @@
-Frontend Challenge for Developer Candidates
-===========================================
 
-To better assess a candidates development skills, we would like to provide the following challenge. This is intendend to be developed in a pair programming session within an hour of time.
+# AmbulnzLLC - Frontend challenge - Pizza webapp
 
-Prerequisites
--------------
+The challenge is to develop a small web app that allows users to order pizza.
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/)
-* [npm](https://www.npmjs.com/)
+First of all we'll display the list of pizzas with ingredients and prices. Data will be loaded from a backend that I develop in spring-boot.
 
-Installation
-------------
+When the user chooses something from the list the item should appear on cart (on the top right of the page).
 
-Clone the project
-
-```bash
-git clone git@github.com:AmbulnzLLC/frontend-challenge.git && cd frontend-challenge/
-```
-
-Install the dependencies
-
-```bash
-npm install
-```
-
-Start the server
-
-```bash
-node server.js
-```
-
-Visit [http://localhost:8080](http://localhost:8080)
-
-**Please set up your working environment before the interview (working server, node, npm dependencies), so we don't spend time installing anything.**
-
-Project description
--------------------
-
-We want to develop a small web app that allows users to order pizza.
-
-First of all we'll display the list of pizzas with ingredients and prices. Data will be loaded from `server/pizzas.json`.
-
-When the user chooses something from the list the order summary will update dynamically.
-
-There will be a button to confirm the order. An ajax call will be performed to `server/order.json` and the result will be displayed as a message like this: "Your order will be delivered in x minutes".
+There will be a button to confirm the order and the user should go to another page and see a message like this: "Your order will be delivered in x minutes".
 
 The application must be single page and JS-based using Angular or ReactJS.
 
-If you can display discounts for pizzas it's a plus.
+Link to the challenge: (https://github.com/AmbulnzLLC/frontend-challenge)
 
-Evaluation
-----------
 
-Our goal is to find answers to those questions:
+## Features and technologies
 
-* Do you understand the JavaScript language and more in general web technologies?
-* Can you judge which library/framework is the best fit for a job and use it correctly?
-* Can you design interfaces that are clear and easy to use?
-* Do you master your working environment?
+- Data from a spring-boot backend
+- Load data using react-query
+- React Context Api to share data in the entire app
+- styled-components
 
-Due to the limited time consider the followings:
 
-* It is NOT important to have a fully functional application at the end
-* We'll develop just for the latest version of Google Chrome (Chromium)
+## Next steps
 
+- Summary of the last orders (items and total price);
+- Add and remove quantity on items;
+- Add unit and e2e tests (cypress and jest);
+- Deploy of frontend and backend;
+- Discounts on items;
